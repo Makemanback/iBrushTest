@@ -1,0 +1,21 @@
+.posts {
+  @include section;
+  margin-bottom: 60px;
+}
+
+.posts__header {
+  margin: 0;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
+
+  font-size: 21px;
+  line-height: 36px;
+  font-weight: normal;
+  color: #000000;
+
+  @media (min-width: $desktop-width) {
+    font-size: 28px;
+    margin-left: 0;
+  }
+}

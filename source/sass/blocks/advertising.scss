@@ -1,0 +1,47 @@
+.advertising {
+  @include section;
+
+  background-color: #ededed;
+  margin-bottom: 40px;
+}
+
+.advertising__wrapper {
+  margin: 20px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    max-width: 609px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.advertising__text,
+.advertising__link {
+  display: inline-block;
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #000000;
+}
+
+.advertising__link {
+  color: #0062ff;
+  text-decoration: underline;
+
+  &:hover {
+    color: red;
+  }
+}
+
+.advertising__image {
+  width: 100%;
+  height: auto;
+
+  @media (min-width: $desktop-width) {
+    width: 609px;
+  }
+}

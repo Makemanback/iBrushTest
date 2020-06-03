@@ -1,0 +1,64 @@
+.blockquote {
+  @include section;
+
+  margin-bottom: 100px;
+}
+
+.blockquote__wrapper {
+  @media (min-width: $desktop-width) {
+    max-width: 738px;
+    margin: 0 auto;
+  }
+}
+
+.blockquote__inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-left: 55px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -10px;
+    width: 34px;
+    height: 34px;
+    background-image: url("../img/quotation-mark.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.blockquote__header {
+  margin: 0 auto;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: normal;
+  color: #000000;
+
+  @media (min-width: $desktop-width) {
+    font-size: 28px;
+    max-width: 738px;
+  }
+}
+
+.blockquote__text,
+.blockquote__cite {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+  color: #000000;
+}
+
+.blockquote__cite {
+  color: #777777;
+  margin-bottom: 0;
+}

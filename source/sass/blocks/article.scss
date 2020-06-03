@@ -1,0 +1,23 @@
+.article {
+  @include section;
+
+  cursor: pointer;
+}
+
+.article__image {
+  margin-bottom: 15px;
+  width: 280px;
+
+  @media (min-width: $desktop-width) {
+    width: 226px;
+  }
+}
+
+.article__header {
+  margin: 0;
+  margin-bottom: 35px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+}

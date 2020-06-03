@@ -1,0 +1,30 @@
+// нормалайз
+@import "normalize.scss";
+// глобальные стили
+@import "common.scss";
+// переменные
+@import "variables.scss";
+// миксины
+@import "mixins.scss";
+// контейнер
+@import "blocks/container.scss";
+// книги
+@import "blocks/books.scss";
+// реклама
+@import "blocks/advertising.scss";
+// статьи
+@import "blocks/article.scss";
+// оценки
+@import "blocks/assessment.scss";
+// цитата
+@import "blocks/blockquote.scss";
+// заключение
+@import "blocks/conclusion.scss";
+// форма
+@import "blocks/form.scss";
+// заголовок главный
+@import "blocks/header.scss";
+// посты
+@import "blocks/posts.scss";
+// слайдер
+@import "blocks/slick.scss";

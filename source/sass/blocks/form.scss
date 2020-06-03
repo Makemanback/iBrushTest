@@ -1,0 +1,169 @@
+.form {
+  @include section;
+
+  background-color: #ededed;
+  margin-bottom: 40px;
+}
+
+.form__wrapper {
+  @include section;
+
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.form__caption {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+  color: $text-color;
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+
+.form__label {
+  position: relative;
+}
+
+.form__label-text {
+  position: absolute;
+  top: 9px;
+  left: 20px;
+
+  font-size: 14px;
+  line-height: 1;
+  font-weight: normal;
+  color: #777777;
+}
+
+.form__input {
+  width: 280px;
+  height: 44px;
+  margin-bottom: 14px;
+  padding-top: 18px;
+  padding-left: 20px;
+
+  background-color: #ffffff;
+  border: 1px solid #ededed;
+  border-radius: 4px;
+
+  font-size: 14px;
+  line-height: 1;
+  font-weight: normal;
+  color: #222222;
+
+  &:hover,
+  &:focus {
+    border-color: #000000;
+    outline: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 226px;
+    margin-right: 30px;
+  }
+}
+
+.form__select {
+  width: 280px;
+  height: 44px;
+  margin-bottom: 14px;
+  padding-left: 15px;
+
+  background-color: #ffffff;
+  background-image: url("../img/angle-arrow-down.png");
+  background-repeat: no-repeat;
+  background-position: 250px 18px;
+  border: 1px solid #ededed;
+  border-radius: 4px;
+  color: #777777;
+
+  appearance: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-color: #000000;
+    outline: none;
+  }
+
+  &:checked {
+    color: #000000;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 226px;
+  }
+}
+
+.form__select-option {
+  font-size: 14px;
+  line-height: 1;
+  color: #777777;
+  font-weight: normal;
+
+  &:nth-of-type(2n) {
+    color: #222222;
+  }
+}
+
+.form__textarea {
+  min-width: 280px;
+  max-width: 280px;
+  height: 115px;
+  margin-bottom: 15px;
+  padding-top: 17px;
+  padding-left: 21px;
+
+  border: 1px solid #ededed;
+  border-radius: 4px;
+  background-color: #ffffff;
+
+  &:hover,
+  &:focus {
+    border-color: #000000;
+    outline: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 737px;
+  }
+}
+
+.form__sumbit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 280px;
+  min-height: 44px;
+  border: none;
+  background-color: #0062ff;
+
+  font-size: 18px;
+  line-height: 1;
+  color: #ffffff;
+  font-weight: normal;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  @media (min-width: $desktop-width) {
+    width: 226px;
+  }
+}

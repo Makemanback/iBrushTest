@@ -1,0 +1,9 @@
+.container {
+  display: block;
+  width: calc(100% - 40px);
+  overflow: hidden;
+
+  @media (min-width: $desktop-width) {
+    max-width: 768px;
+  }
+}

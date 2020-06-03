@@ -1,0 +1,44 @@
+.conclusion {
+  @include section;
+
+  margin-bottom: 40px;
+}
+
+.conclusion__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 20px;
+  margin-left: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.conclusion__header {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 21px;
+  line-height: 36px;
+  font-weight: normal;
+  color: #000000;
+
+  @media (min-width: $desktop-width) {
+    font-size: 28px;
+  }
+}
+
+.conclusion__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: $text-color;
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
